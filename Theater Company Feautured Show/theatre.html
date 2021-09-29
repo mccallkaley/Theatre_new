@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: font-family: 'Roboto', sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  color: #F2F2F2;
+  font-size: 35px;
+  width: 100%;
+  height: 400px;
+  background-image: url(https://lh3.googleusercontent.com/S4T73fTVL5IF3Lc54KtlqfhEoOW1IyLmSQQ7AsZsQR_4FO-F60GL21PYXneWoAf81lYyP0EdfK5gKpg=w1349-h578);
+  background-size: cover;
+  border: 1px solid black;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left middle middle middle middle right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: black;
+  padding: 10px;
+  text-align:none;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 0px;
+  margin-top: 50px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
+</head>
+<body>
+
+<p><strong>
+<div class="topnav">
+  <a href="#" style="float:left"><strong>Griot Theater</strong></a>
+  <a href="#" style="float:right">Home</a>
+  <a href="#" style="float:right" >Features</a>
+  <a href="#" style="float:right">Our Photos</a>
+  <a href="#" style="float:right">Contact</a>
+</div>
+<div class="grid-container">
+  <div class="header">
+    <h2>Featured Shows</h2>
+  </div>
+  
+  <div class="left" style="background-color:black;"></div>
+  <div class="middle" style="background-color:#bbb;">
+  <p><ul>
+  <li><a>A Raisin In The Sun</a></li>
+  <li><a>April 6,2020 - March 20, 2020</a></li>
+  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
+  <li><a>$75</a></li>
+  
+  <li><a>A Raisin In The Sun</a></li>
+  <li><a>April 6,2020 - March 20, 2020</a></li>
+  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
+  <li><a>$75</a></li>
+  
+  <li><a>A Raisin In The Sun</a></li>
+  <li><a>April 6,2020 - March 20, 2020</a></li>
+  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
+  <li><a>$75</a></li>
+  	</div>  
+  <div class="right" style="background-color:black;"></div>
+  
+  <div class="footer">
+  	<div class="card">
+      	<h3>Social</h3>
+      	<p><ul>
+        <li><a href="https://www.facebook.com/mccall.butler1" style="float:left">Facebook</a></li>
+      	<li><a href="https://www.instagram.com/mickeybeemakeup/" style="float:left">Makeup Portfolio</a></li>
+      	<li><a href="https://www.instagram.com/mickeybee23/" style="float:left">Instagram</a></li>
+    	</ul></p>
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>
