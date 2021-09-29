@@ -1,0 +1,24 @@
+body {
+    margin:0px;
+    padding: 20px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15p;
+}
+
+
+
+img {
+    width: auto;
+    height: 130px;
+    object-fit: cover;     /* cover makes images not look weird or distorted */
+    float: left;
+    margin-right:30px
+    box-sizing: border-box;
+    border:1px solid grey
+
+    
+}
