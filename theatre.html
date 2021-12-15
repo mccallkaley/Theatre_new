@@ -1,153 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: font-family: 'Roboto', sans-serif;
-}
-
-/* Style the header */
-.header {
-  grid-area: header;
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-  color: #F2F2F2;
-  font-size: 35px;
-  width: 100%;
-  height: 400px;
-  background-image: url(https://lh3.googleusercontent.com/S4T73fTVL5IF3Lc54KtlqfhEoOW1IyLmSQQ7AsZsQR_4FO-F60GL21PYXneWoAf81lYyP0EdfK5gKpg=w1349-h578);
-  background-size: cover;
-  border: 1px solid black;
-
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header header header header header header' 
-    'left middle middle middle middle right' 
-    'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
-
-.left,
-.middle,
-.right {
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
-/* Style the footer */
-.footer {
-  grid-area: footer;
-  background-color: black;
-  padding: 10px;
-  text-align:none;
-}
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 0px;
-  margin-top: 50px;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .grid-container  {
-    grid-template-areas: 
-      'header header header header header header' 
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
-      'footer footer footer footer footer footer';
-  }
-}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="theatre.css">
+<title>Theatre Company</title>
 </head>
 <body>
+    <div>
+        <div class="row1">
+            <div class="mnname col-md-5">
+                <h2>Griot Theater</h2>
+            </div>
+            <div class="navbar col-md">
+                <a href="">Home</a>
+            </div>
+            <div class="navbar col-md">
+                <a href="">Features</a>
+            </div>
+            <div class="navbar col-md">
+                <a href="">Our Actors</a>
+            </div>
+            <div class="navbar col-md">
+                <a href="">Mission</a>
+            </div>
+            <div class="navbar col-md">
+                <a href="">Contact</a>
+            </div>
+            <div class="navbarblank col-md-2"></div>
+        </div>
+        
+        
+        <div class="header col-md">
+            <p><a href="" target="_blank">Featured Shows</a></p>
+        </div>
+        
+        
+        <div class="row2">
+            <div class="filler col-md-2"></div>
+            <div class="april col-md-8">
+                <p>April 2020</p>
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+        
+        
+        <div class="row3">
+            <div class="filler col-md-2"></div>
+            <div class="ad col-md-2">
+                <img src="./images/picture.png">
+            </div>
+            <div class="ad col-md-4">
+                <h4>A Raisin In The Sun</h4>
+                <p>April 6, 2020 - March 12, 2021</p>
+                <p>Griot Theater, 233 State St Chicago, IL</p>
+                <p>$75</p>
+            </div>
+            <div class="ad col-md-2">
+                <button type="button">Read More</button>
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
 
-<p><strong>
-<div class="topnav">
-  <a href="#" style="float:left"><strong>Griot Theater</strong></a>
-  <a href="#" style="float:right">Home</a>
-  <a href="#" style="float:right" >Features</a>
-  <a href="#" style="float:right">Our Photos</a>
-  <a href="#" style="float:right">Contact</a>
-</div>
-<div class="grid-container">
-  <div class="header">
-    <h2>Featured Shows</h2>
-  </div>
-  
-  <div class="left" style="background-color:black;"></div>
-  <div class="middle" style="background-color:#bbb;">
-  <p><ul>
-  <li><a>A Raisin In The Sun</a></li>
-  <li><a>April 6,2020 - March 20, 2020</a></li>
-  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
-  <li><a>$75</a></li>
-  
-  <li><a>A Raisin In The Sun</a></li>
-  <li><a>April 6,2020 - March 20, 2020</a></li>
-  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
-  <li><a>$75</a></li>
-  
-  <li><a>A Raisin In The Sun</a></li>
-  <li><a>April 6,2020 - March 20, 2020</a></li>
-  <li><a>Griot Theatre 233 State St Chicago,IL</a></li>
-  <li><a>$75</a></li>
-  	</div>  
-  <div class="right" style="background-color:black;"></div>
-  
-  <div class="footer">
-  	<div class="card">
-      	<h3>Social</h3>
-      	<p><ul>
-        <li><a href="https://www.facebook.com/mccall.butler1" style="float:left">Facebook</a></li>
-      	<li><a href="https://www.instagram.com/mickeybeemakeup/" style="float:left">Makeup Portfolio</a></li>
-      	<li><a href="https://www.instagram.com/mickeybee23/" style="float:left">Instagram</a></li>
-    	</ul></p>
+    
+        <div class="row4">
+            <div class="filler col-md-2"></div>
+            <div class="break col-md-8">
+                <hr class="break">
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+    
+
+        <div class="row3">
+            <div class="filler col-md-2"></div>
+            <div class="ad col-md-2">
+                <img src="./images/picture.png">
+            </div>
+            <div class="ad col-md-4">
+                <h4>A Raisin In The Sun</h4>
+                <p>April 6, 2020 - March 12, 2021</p>
+                <p>Griot Theater, 233 State St Chicago, IL</p>
+                <p>$75</p>
+            </div>
+            <div class="ad col-md-2">
+                <button type="button">Read More</button>
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+
+        <div class="row4">
+            <div class="filler col-md-2"></div>
+            <div class="break col-md-8">
+                <hr class="break">
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+
+        <div class="row3">
+            <div class="filler col-md-2"></div>
+            <div class="ad col-md-2">
+                <img src="./images/picture.png">
+            </div>
+            <div class="ad col-md-4">
+                <h4>A Raisin In The Sun</h4>
+                <p>April 6, 2020 - March 12, 2021</p>
+                <p>Griot Theater, 233 State St Chicago, IL</p>
+                <p>$75</p>
+            </div>
+            <div class="ad col-md-2">
+                <button type="button">Read More</button>
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+
+        <div class="row4">
+            <div class="filler col-md-2"></div>
+            <div class="break col-md-8">
+                <hr class="break">
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+
+        <div class="row3">
+            <div class="filler col-md-2"></div>
+            <div class="ad col-md-2">
+                <img src="./images/picture.png">
+            </div>
+            <div class="ad col-md-4">
+                <h4>A Raisin In The Sun</h4>
+                <p>April 6, 2020 - March 12, 2021</p>
+                <p>Griot Theater, 233 State St Chicago, IL</p>
+                <p>$75</p>
+            </div>
+            <div class="ad col-md-2">
+                <button type="button">Read More</button>
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+
+        <div class="row4">
+            <div class="filler col-md-2"></div>
+            <div class="break col-md-8">
+                <hr class="break">
+            </div>
+            <div class="filler col-md-2"></div>
+        </div>
+
+        <div class="lastrow">
+            <div class="map col-md-4">
+                <img src="./images/map.png">
+            </div>
+            <div class="info col-md">
+                <h1>Info</h1><br>
+                    <p><i class='fas fa-envelope-square' style="font-size:30px"></i>  Chicago, IL 60611 United States</p><br>         
+                    <p><i class='fas fa-map-marker-alt' style="font-size:30px"></i>  example@example.com</p><br>
+                    <p><i class='fas fa-phone-square-alt' style="font-size:30px"></i>  Call Us: 708-555-4488</p><br>
+            </div>
+            <div class="shows col-md">
+                <h1>Shows</h1><br>
+                    <p><a href="">The Piano Lesson</a></p><br>
+                    <p><a href="">A Raisin In The Sun</a></p><br>
+                    <p><a href="">FAME</a></p>
+                    <p><a href="">The Color Purple</a></p>
+            </div>
+            <div class="social col-md">
+                <h1>Social</h1><br>
+                    <p><a href="https://www.facebook.com/" target=" ">Facebook</a></p><br>
+                    <p><a href="https://twitter.com/?lang=en" target=" ">Twitter</a></p><br>
+                    <p><a href="https://www.youtube.com/" target=" ">Youtube</a></p>
+                    <p><a href="https://www.instagram.com/" target=" ">Instagram</a></p>
+            </div>
     </div>
-   
-  </div>
-</div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
